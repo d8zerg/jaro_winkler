@@ -79,7 +79,7 @@ inline int get_transposition_count(const std::wstring & wl, const std::wstring &
     return trans_count;
 }
 
-inline double get_jaro_winkler_distance(const std::wstring & wl, const std::wstring & wr)
+inline double get_jaro_winkler_distance(const std::wstring & wl, const std::wstring & wr) noexcept
 {
     if (wl == wr)
     {
